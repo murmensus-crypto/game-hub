@@ -1,4 +1,4 @@
-import { Steps, Button, ButtonGroup, Grid, GridItem, Box } from "@chakra-ui/react";
+import { Grid, GridItem, Box } from "@chakra-ui/react";
 import NavBar from "./components/NavBar"
 import GameGrid from "./components/GameGrid";
 import PlatformSelector from "./components/PlatformSelector";
@@ -6,7 +6,6 @@ import { GenreList } from "./components/GenreList"
 import { useState } from "react";
 import { Genres } from "./hooks/useGenre";
 import { Platform } from "./hooks/useGames";
-import { HStack } from "@chakra-ui/react";
 import { SortSelector } from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
 import { Flex } from "@chakra-ui/react";
@@ -33,7 +32,7 @@ function App() {
       </GridItem>
       <Box hideBelow="lg">
         
-         <GridItem area="aside" bg="blue" paddingX="5px"><GenreList selectedGenre={gameQuery.genre} onSelectGenre={(genre) => setGameQuery({...gameQuery, genre})} /></GridItem>
+         <GridItem area="aside" bg="black" paddingX="5px"><GenreList selectedGenre={gameQuery.genre} onSelectGenre={(genre) => setGameQuery({...gameQuery, genre})} /></GridItem>
 
       </Box>
       <GridItem area="main">

@@ -1,7 +1,7 @@
 
     "use client"
 
-import { Button, HStack } from "@chakra-ui/react"
+import { HStack } from "@chakra-ui/react"
 import { useColorMode } from "@/components/ui/color-mode";
 import { Switch } from "@chakra-ui/react"
 

@@ -1,4 +1,4 @@
-import { Steps, HStack, Image } from '@chakra-ui/react';
+import { HStack, Image } from '@chakra-ui/react';
 import devicon from '../assets/devicon.svg';
 import ColorMooSwitch from './ColorMooSwitch';
 import SearchInput from './SearchInput';
