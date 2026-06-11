@@ -32,11 +32,11 @@ function App() {
       </GridItem>
       <Box hideBelow="lg">
         
-         <GridItem area="aside" bg="black" paddingX="5px"><GenreList selectedGenre={gameQuery.genre} onSelectGenre={(genre) => setGameQuery({...gameQuery, genre})} /></GridItem>
+         <GridItem area="aside" paddingX="6px"><GenreList selectedGenre={gameQuery.genre} onSelectGenre={(genre) => setGameQuery({...gameQuery, genre})} /></GridItem>
 
-      </Box>
+      </Box>  
       <GridItem area="main">
-        <Box  paddingLeft={5}>
+        <Box  paddingLeft={8}>
           <GameHeading gameQuery={gameQuery} />
           <Flex marginBottom={5}>
             <Box marginRight={5}>
